@@ -11,6 +11,8 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "dayjs": "^1.11.10",
+    "ioredis": "^5.3.2",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18",
