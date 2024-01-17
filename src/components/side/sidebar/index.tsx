@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { getAllNotes } from "@/lib/redis";
-import SidebarNoteList from "@/components/side/sidebarNoteList/SidebarNoteList";
+import SidebarNoteList from "@/components/side/sidebarNoteList";
 
 export default async function Sidebar() {
   const notes = await getAllNotes();

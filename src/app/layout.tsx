@@ -1,4 +1,4 @@
-import Sidebar from "@/components/side/sidebar/SideBar";
+import Sidebar from "@/components/side/sidebar";
 import "./style.css";
 
 export default function RootLayout({

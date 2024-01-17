@@ -11,8 +11,8 @@ export default function SidebarNoteContent({
 }: {
   id: string;
   title: string;
-  children: string;
-  expandedChildren: boolean;
+  children: any;
+  expandedChildren: any;
 }) {
   const router = useRouter();
   const pathname = usePathname();

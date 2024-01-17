@@ -1,12 +1,23 @@
 import dayjs from "dayjs";
-import SidebarNoteItemContent from "@/components/side/sidebarNoteItemContent/SidebarNoteItemContent";
+import SidebarNoteItemContent from "@/components/side/sidebarNoteItemContent";
 
-export default function SidebarNoteItem({ noteId, note }) {
+interface Note {
+  title: string;
+  content?: string;
+  updateTime: number;
+}
+
+type NoteProps = {
+  noteId: string;
+  note: Note;
+};
+
+export default function SidebarNoteItem({ noteId, note }: NoteProps) {
   const { title, content = "", updateTime } = note;
   return (
     <SidebarNoteItemContent
       id={noteId}
-      title={note.title}
+      title={note?.title}
       expandedChildren={
         <p className="sidebar-note-excerpt">
           {content.substring(0, 20) || <i>(No content)</i>}
