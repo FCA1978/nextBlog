@@ -1,7 +1,7 @@
 import dayjs from "dayjs";
 import SidebarNoteItem from "@/components/side/sideBarNoteItem/SideBarNoteItem";
 
-export default async function NoteList({ notes }) {
+export default async function NoteList({ notes }: { notes: string }) {
   const arr = Object.entries(notes);
 
   if (arr.length == 0) {
