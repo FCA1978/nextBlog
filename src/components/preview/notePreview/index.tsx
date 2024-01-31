@@ -19,7 +19,7 @@ interface NotePreviewProps {
   children: string;
 }
 
-export default function NotePreview({ children }: NotePreviewProps) {
+export default async function NotePreview({ children }: NotePreviewProps) {
   const markedHtml = await marked(children || "");
   return (
     <div className="note-preview">
