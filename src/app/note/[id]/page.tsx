@@ -1,6 +1,5 @@
 import Note from "@/components/note/index";
 import { getNote } from "@/lib/redis";
-import { promises } from "dns";
 
 export default async function Page({ params }: { params: { id: number } }) {
   // 动态路由 获取笔记 id

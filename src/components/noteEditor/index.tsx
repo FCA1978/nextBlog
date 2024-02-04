@@ -43,7 +43,7 @@ export default function NoteEditor({ noteId, initialTitle, initialBody }: any) {
             formAction={() => saveNote(noteId, title, body)}
             role="menuitem"
           >
-            // ... Done
+            ... Done
           </button>
           {!isDraft && (
             <button
@@ -52,7 +52,7 @@ export default function NoteEditor({ noteId, initialTitle, initialBody }: any) {
               formAction={() => deleteNote(noteId)}
               role="menuitem"
             >
-              // ... Delete
+              ... Delete
             </button>
           )}
         </form>

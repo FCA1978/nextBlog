@@ -2,6 +2,7 @@
 
 import { useState, useRef, useEffect, useTransition } from "react";
 import { useRouter, usePathname } from "next/navigation";
+import Image from "next/legacy/image";
 
 export default function SidebarNoteContent({
   id,
@@ -77,14 +78,14 @@ export default function SidebarNoteContent({
         }}
       >
         {isExpanded ? (
-          <img
+          <Image
             src="/chevron-down.svg"
-            width="10px"
-            height="10px"
+            width="10"
+            height="10"
             alt="Collapse"
           />
         ) : (
-          <img src="/chevron-up.svg" width="10px" height="10px" alt="Expand" />
+          <Image src="/chevron-up.svg" width="10" height="10" alt="Expand" />
         )}
       </button>
       {isExpanded && expandedChildren}

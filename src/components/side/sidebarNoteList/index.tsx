@@ -1,4 +1,3 @@
-import dayjs from "dayjs";
 import SidebarNoteItem from "@/components/side/sideBarNoteItem";
 import { getAllNotes } from "@/lib/redis";
 

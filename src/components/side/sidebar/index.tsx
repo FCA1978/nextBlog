@@ -1,6 +1,6 @@
 import React, { Suspense } from "react";
 import Link from "next/link";
-import { getAllNotes } from "@/lib/redis";
+import Image from "next/legacy/image";
 
 import SidebarNoteList from "@/components/side/sidebarNoteList";
 import EditButton from "@/components/button/editButton";
@@ -12,11 +12,11 @@ export default async function Sidebar() {
       <section className="col sidebar">
         <Link href={"/"} className="link--unstyled">
           <section className="sidebar-header">
-            <img
+            <Image
               className="logo"
               src="/next.svg"
-              width="22px"
-              height="20px"
+              width="22"
+              height="20"
               alt=""
               role="presentation"
             />
