@@ -81,11 +81,11 @@ export default function SidebarNoteContent({
           <Image
             src="/chevron-down.svg"
             width="10"
-            height="10"
+            height="18"
             alt="Collapse"
           />
         ) : (
-          <Image src="/chevron-up.svg" width="10" height="10" alt="Expand" />
+          <Image src="/chevron-up.svg" width="10" height="18" alt="Expand" />
         )}
       </button>
       {isExpanded && expandedChildren}
