@@ -1,4 +1,4 @@
-export default function Page() {
+export default function Page({ params: { lng } }) {
   return (
     <div className="note--empty-state">
       <span className="note-text--empty-state">
